@@ -12,7 +12,7 @@ model_url = 'https://raw.githubusercontent.com/DreamIsMl/T20-Match-Win-Probabili
 response = requests.get(model_url)
 pipe = pickle.loads(response.content)
 
-st.title('T20 Match Win Predictor By Hakim')
+st.title('Hakim's T20 Match Oracle: Win Odds Unveiled')
 
 col1, col2 = st.columns(2)
 

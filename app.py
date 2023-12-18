@@ -1,7 +1,8 @@
 import pickle
+
 import pandas as pd
-import streamlit as st
 import requests  # Add this import for handling HTTP requests
+import streamlit as st
 
 teams = ['South Africa', 'India', 'New Zealand', 'West Indies', 'Australia', 'Sri Lanka', 'England', 'Bangladesh', 'Pakistan']
 
@@ -12,8 +13,25 @@ model_url = 'https://raw.githubusercontent.com/DreamIsMl/T20-Match-Win-Probabili
 response = requests.get(model_url)
 pipe = pickle.loads(response.content)
 
-st.title("Hakim's T20 Match Oracle: Win Odds Unveiled")
+st.title("🏏 Hakim's T20 Match Oracle: Win Odds Unveiled 🌟")
+st.markdown(
+    """
+    Hi there! I'm Md. Azizul Hakim, a student at BSPI on CST. I'm passionate about Machine Learning and AI,
+    actively working in the field alongside my studies. Currently, I'm diving deep into deep learning and 
+    enjoying participating in Kaggle competitions to enhance my skills.
+    """
+)
 
+# Links to Kaggle and GitHub Profiles
+st.markdown(
+    """
+    **Kaggle Profile:** [Md. Azizul Hakim](https://www.kaggle.com/me) | 
+    **GitHub Profile:** [DreamIsMl](https://github.com/DreamIsMl)
+    """
+)
+
+# Input Section
+st.header("Let's Predict T20 Match Win Probability!")
 col1, col2 = st.columns(2)
 
 with col1:

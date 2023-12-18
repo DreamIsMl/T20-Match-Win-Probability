@@ -8,11 +8,11 @@ teams = ['South Africa', 'India', 'New Zealand', 'West Indies', 'Australia', 'Sr
 cities = ['Sharjah Cricket Stadium', 'Saxton Oval', 'Hyderabad', 'Sydney Cricket Ground', 'Abu Dhabi', 'Harare Sports Club', 'Nagpur', 'The Rose Bowl', 'Visakhapatnam', 'Headingley', 'Premadasa Stadium', 'Dubai', 'Dharamsala', 'New Wanderers Stadium', 'Queen Park Oval', 'Kennington Oval', 'University Oval', 'Kimberley', 'Ahmedabad', 'Ranchi', 'Malahide', 'Senwes Park', 'Delhi', 'Shere Bangla', 'Boland Park', 'Bay Oval']
 
 # Load the model from GitHub
-model_url = 'https://raw.githubusercontent.com/DreamIsMl/T20-Match-Win-Probability/edit/master/model.pkl'
+model_url = 'https://raw.githubusercontent.com/DreamIsMl/T20-Match-Win-Probability/master/model.pkl'
 response = requests.get(model_url)
 pipe = pickle.loads(response.content)
 
-st.title('T20 Match Win Predictor')
+st.title('T20 Match Win Predictor By Hakim')
 
 col1, col2 = st.columns(2)
 
